@@ -1,0 +1,14 @@
+<h1>Tasks</h1>
+
+<form action="/tasks" method="POST">
+  <input name="title" />
+  <button>Add</button>
+</form>
+
+<ul>
+  <% tasks.forEach(task => { %>
+    <li>
+      <%= task.title %> - <%= task.status %>
+    </li>
+  <% }) %>
+</ul>
